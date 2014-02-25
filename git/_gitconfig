@@ -1,0 +1,9 @@
+[user]
+	name = Gorcha (Danny Smith)
+	email = danny@gorcha.org
+[merge]
+	tool = vimdiff
+[core]
+	editor = vim
+[color]
+	status = auto

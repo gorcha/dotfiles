@@ -1,0 +1,58 @@
+set number
+set hlsearch
+
+set showcmd		" Show (partial) command in status line.
+set showmatch		" Show matching brackets.
+set ignorecase		" Do case insensitive matching
+set smartcase		" Do smart case matching
+set incsearch		" Incremental search
+
+set wildmenu
+
+if has('mouse')
+  set mouse=a
+endif
+
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set ruler
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+
+au FileType c setlocal tabstop=2 shiftwidth=2
+au FileType r setlocal tabstop=2 shiftwidth=2
+au FileType html setlocal tabstop=2 shiftwidth=2
+
+set tabpagemax=20
+
+set background=dark
+let solarized_termtrans=1
+colorscheme solarized
+
+" Shortcuts for NERDTree
+map <F2> :NERDTreeToggle<cr>
+map <F3> :NERDTreeMirror<cr>
+let NERDTreeIgnore=['\~$']
+let NERDTreeShowBookmarks=1
+
+" Shortcuts for diff
+map <F4> :set invdiff<CR>:set invscrollbind<CR>
+map <F5> :diffget<CR>
+map <F6> :diffput<CR
+
+" " completion
+" imap <F7> <C-N><C-P>
+" map <F7> i<C-N><C-P>
+"
+" " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+" nnoremap <silent> <F10> :BufExplorer<CR>
+" nnoremap <silent> <F11> :bp<CR>
+" nnoremap <silent> <F12> :bn<CR>
+"
+
+
+map <F8> :!make<CR>
+imap <F8> <ESC>:!make<CR>
