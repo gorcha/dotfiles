@@ -1,36 +1,123 @@
+
+execute pathogen#infect()
+
+if has('autocmd')
+  filetype plugin indent on
+endif
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
+
 set number
 set hlsearch
+set showmatch
+set ignorecase
+set smartcase
 
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set smartcase		" Do smart case matching
-set incsearch		" Incremental search
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
 
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+set autoindent
+set backspace=indent,eol,start
+"set complete-=i
+set smarttab
+
+"set nrformats-=octal
+"set shiftround
+
+"set ttimeout
+"set ttimeoutlen=100
+
+set incsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
+set laststatus=2
+set ruler
+set showcmd
 set wildmenu
+
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
+if &encoding ==# 'latin1' && has('gui_running')
+  set encoding=utf-8
+endif
+
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+  if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
+    let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
+  endif
+endif
+
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
+
+"set autoread
+set fileformats+=mac
+
+if &history < 1000
+  set history=1000
+endif
+if &tabpagemax < 50
+  set tabpagemax=50
+endif
+if !empty(&viminfo)
+  set viminfo^=!
+endif
+
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^linux'
+  set t_Co=16
+endif
+
+" Load matchit.vim, but only if the user hasn't installed a newer version.
+if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
+  runtime! macros/matchit.vim
+endif
+
+inoremap <C-U> <C-G>u<C-U>
+
 
 if has('mouse')
   set mouse=a
 endif
 
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-set ruler
-
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-set smartindent
-
-au FileType c setlocal tabstop=2 shiftwidth=2
-au FileType r setlocal tabstop=2 shiftwidth=2
-au FileType html setlocal tabstop=2 shiftwidth=2
-
-set tabpagemax=20
-
 set background=dark
 let solarized_termtrans=1
 colorscheme solarized
+
+
+
+"""" File type commands """"
+
+au FileType c setlocal tabstop=2 shiftwidth=2
+
+au FileType r setlocal tabstop=2 shiftwidth=2
+
+au FileType html setlocal tabstop=2 shiftwidth=2
+
+au FileType vim setlocal tabstop=2 shiftwidth=2
+
+" smart indenting for python files
+au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
+
+
+"""" Function key shortcuts """"
 
 " Shortcuts for NERDTree
 map <F2> :NERDTreeToggle<cr>
@@ -52,7 +139,6 @@ map <F6> :diffput<CR
 " nnoremap <silent> <F11> :bp<CR>
 " nnoremap <silent> <F12> :bn<CR>
 "
-
 
 map <F8> :!make<CR>
 imap <F8> <ESC>:!make<CR>

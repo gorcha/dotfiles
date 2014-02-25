@@ -1,0 +1,57 @@
+
+### enable colour support
+alias ls='ls $LS_OPTIONS'
+#alias dir='dir $LS_OPTIONS'
+#alias vdir='vdir $LS_OPTIONS'
+
+alias grep='grep $LS_OPTIONS'
+#alias fgrep='fgrep $LS_OPTIONS'
+#alias egrep='egrep $LS_OPTIONS'
+###
+
+# some more ls aliases
+alias ll='ls $LS_OPTIONS -l'
+alias la='ls $LS_OPTIONS -A'
+alias l='ls $LS_OPTIONS -lA'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias x='exit'
+
+alias aptitude='sudo aptitude'
+
+#vim
+alias vs='sudo vim'
+alias vo='vim -O' 
+alias vp='vim -p'
+alias vx='vim -R'
+alias vvi='vim'
+
+# VPN
+#alias vicstart='sudo /etc/openvpn/vicstart.sh'
+#alias vicstop='sudo /etc/openvpn/vicstop.sh'
+alias src-sfcati='sftp dsmith@cati2'
+alias src-rdv='remmina -c ~/.remmina/vts1.remmina &'
+alias src-rdv2='remmina -c ~/.remmina/vts2.remmina &'
+alias src-rdp='remmina -c ~/.remmina/pts1.remmina &'
+alias src-rdp2='remmina -c ~/.remmina/pts2.remmina &'
+alias src-rdpsas='remmina -c ~/.remmina/psas1.remmina &'
+alias src-mnz='sudo mount //vdc1/zdrive/ /srcentre/zdrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+alias src-mno='sudo mount //pdc1/odrive/ /srcentre/odrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+alias src-mnmydoc='sudo mount //vdc1/userprofiles/Documents/dsmith/My\ Documents /srcentre/mydocs -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+
+alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
+
+# RMIT
+alias shyall='ssh -X s3361789@yallara'
+alias shnumb='ssh -X s3361789@numbat'
+alias sheres='ssh -X s3361789@aa-s2.eres.rmit.edu.au'
+alias mnyall='sshfs s3361789@yallara: /mnt/rmit/' 
+
+alias avyoutube="avconv -i $1 -f image2 -loop 1 -i $2 -shortest -r 25 $1.wmv"
+
+alias gcc="gcc -Wall -ansi -pedantic"
+
+alias shserv='ssh danny@gorcha.org'
