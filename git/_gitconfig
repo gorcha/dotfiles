@@ -9,3 +9,5 @@
 	status = auto
 [web]
 	browser = google-chrome
+[push]
+	default = simple
