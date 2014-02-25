@@ -19,3 +19,6 @@
 [submodule "vim/dotvim/bundle/nerdtree"]
 	path = vim/dotvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bin/gibo"]
+	path = bin/gibo
+	url = https://github.com/simonwhitaker/gibo.git

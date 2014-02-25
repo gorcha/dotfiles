@@ -38,6 +38,7 @@ plugins=(git rvm colorize)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
+alias x='exit'
 
 #[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 #autoload -U compinit && compinit
