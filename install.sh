@@ -34,9 +34,9 @@ git submodule update --init --recursive
 # ln -sf ${repohome}/bash/_inputrc $HOME/.inputrc
 # ln -sf ${repohome}/bash/_git.scmbrc $HOME/.git.scmbrc
 
-## [zsh]
-# ln -sfT ${repohome}/zsh/oh-my-zsh $HOME/.oh-my-zsh
-# ln -sf ${repohome}/zsh/_zshrc $HOME/.zshrc
+# [zsh]
+ ln -sfT ${repohome}/zsh/oh-my-zsh $HOME/.oh-my-zsh
+ ln -sf ${repohome}/zsh/_zshrc $HOME/.zshrc
 
 ## [autojump]
 # cd ${repohome}/bin/autojump
