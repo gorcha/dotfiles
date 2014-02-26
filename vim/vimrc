@@ -19,6 +19,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
+set modeline
+
 "set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 set autoindent

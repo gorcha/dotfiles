@@ -25,3 +25,6 @@
 [submodule "bin/hub"]
 	path = bin/hub
 	url = git://github.com/github/hub.git
+[submodule "bin/rupa_v"]
+	path = bin/rupa_v
+	url = https://github.com/rupa/v.git

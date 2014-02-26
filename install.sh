@@ -26,10 +26,12 @@ git submodule update --init --recursive
 
 ## [bin]
 mkdir -p $HOME/local/bin
-ln -sf ${repohome}/bin/gibo/gibo $HOME/local/bin/gibo
+ ln -sf ${repohome}/bin/rupa_v/v $HOME/local/bin/v
+ ln -sf ${repohome}/bin/gibo/gibo $HOME/local/bin/gibo
 
 ## [Bash]
-# ln -sf ${repohome}/bash/_bash_aliases $HOME/.bash_aliases
+ ln -sf ${repohome}/bash/_bashrc $HOME/.bashrc
+ ln -sf ${repohome}/bash/_bash_aliases $HOME/.bash_aliases
 # ln -sf ${repohome}/bash/_bash_extras $HOME/.bash_extras
 # ln -sf ${repohome}/bash/_inputrc $HOME/.inputrc
 # ln -sf ${repohome}/bash/_git.scmbrc $HOME/.git.scmbrc
@@ -72,9 +74,9 @@ ln -sf ${repohome}/bin/gibo/gibo $HOME/local/bin/gibo
 #  cat ${repohome}/dconf/_org_gnome_libgnomekbd_keyboard | dconf load /org/gnome/libgnomekbd/keyboard/
 #fi
 
-## [gconf]
-# mkdir -p $HOME/.fonts
-# ln -sf ${repohome}/_fonts/SourceCodePro-Semibold-Powerline.otf $HOME/.fonts/
+# [gconf]
+ mkdir -p $HOME/.fonts
+ ln -sf ${repohome}/_fonts/SourceCodePro-Semibold-Powerline.otf $HOME/.fonts/
 #if exists gconftool-2; then
 #  # gconftool-2 --dump '/apps/gnome-terminal' > gconf/gnome-terminal_gconf_settings.xml
 #  gconftool-2 --load ${repohome}/gconf/gnome-terminal_gconf_settings.xml

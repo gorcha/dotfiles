@@ -1,3 +1,4 @@
+# vim: set ft=sh:
 
 ### enable colour support
 alias ls='ls $LS_OPTIONS'
