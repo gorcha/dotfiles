@@ -101,11 +101,6 @@ let solarized_termtrans=1
 colorscheme solarized
 
 
-" higlight lines over 80 chars
-highlight OverLength ctermbg=red ctermfg=DarkGrey guibg=DarkRed 
-match OverLength /\%81v.\+/
-
-
 """" GUI stuff """"
 
 if has('gui_running')
@@ -123,11 +118,18 @@ endif
 
 """" File type commands """"
 
+" set shorter shift width for some file types
 au FileType c,r,html,vim setlocal tabstop=2 shiftwidth=2
 
 " smart indenting for python files
 au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" recognise spss syntax files
+au BufRead,BufNewFile *.sps set filetype=sps
+
+" higlight lines over 80 chars for some file types
+highlight OverLength ctermbg=red ctermfg=DarkGrey guibg=DarkRed 
+au FileType c,r,python,java match OverLength /\%81v.\+/
 
 
 """" Function key shortcuts """"
