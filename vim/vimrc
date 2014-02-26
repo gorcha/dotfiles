@@ -19,7 +19,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 set autoindent
 set backspace=indent,eol,start
@@ -62,9 +62,9 @@ if &listchars ==# 'eol:$'
   endif
 endif
 
-if &shell =~# 'fish$'
-  set shell=/bin/bash
-endif
+"if &shell =~# 'fish$'
+"  set shell=/bin/bash
+"endif
 
 "set autoread
 set fileformats+=mac
@@ -101,16 +101,29 @@ let solarized_termtrans=1
 colorscheme solarized
 
 
+" higlight lines over 80 chars
+highlight OverLength ctermbg=red ctermfg=DarkGrey guibg=DarkRed 
+match OverLength /\%81v.\+/
+
+
+"""" GUI stuff """"
+
+if has('gui_running')
+	set guifont=Consolas:h11:cANSI
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    "set guioptions-=L  "remove left-hand scroll bar
+
+    nnoremap <C-F2> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+    nnoremap <C-F3> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
+    nnoremap <C-F4> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+endif
+
 
 """" File type commands """"
 
-au FileType c setlocal tabstop=2 shiftwidth=2
-
-au FileType r setlocal tabstop=2 shiftwidth=2
-
-au FileType html setlocal tabstop=2 shiftwidth=2
-
-au FileType vim setlocal tabstop=2 shiftwidth=2
+au FileType c,r,html,vim setlocal tabstop=2 shiftwidth=2
 
 " smart indenting for python files
 au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -130,15 +143,15 @@ map <F4> :set invdiff<CR>:set invscrollbind<CR>
 map <F5> :diffget<CR>
 map <F6> :diffput<CR
 
-" " completion
-" imap <F7> <C-N><C-P>
-" map <F7> i<C-N><C-P>
-"
-" " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-" nnoremap <silent> <F10> :BufExplorer<CR>
-" nnoremap <silent> <F11> :bp<CR>
-" nnoremap <silent> <F12> :bn<CR>
-"
-
 map <F8> :!make<CR>
 imap <F8> <ESC>:!make<CR>
+
+" completion
+imap <F9> <C-N><C-P>
+map <F9> i<C-N><C-P>
+
+" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+"nnoremap <silent> <F10> :BufExplorer<CR>
+nnoremap <F11> :bprev<CR>
+nnoremap <F12> :bnext<CR>
+

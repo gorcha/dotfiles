@@ -40,6 +40,35 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 alias x='exit'
 
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias aptitude='sudo aptitude'
+
+#vim
+alias vs='sudo vim'
+alias vo='vim -O' 
+alias vp='vim -p'
+alias vx='vim -R'
+alias vvi='vim'
+
+# VPN
+#alias vicstart='sudo /etc/openvpn/vicstart.sh'
+#alias vicstop='sudo /etc/openvpn/vicstop.sh'
+alias src-sfcati='sftp dsmith@cati2'
+alias src-rdv='remmina -c ~/.remmina/vts1.remmina &'
+alias src-rdv2='remmina -c ~/.remmina/vts2.remmina &'
+alias src-rdp='remmina -c ~/.remmina/pts1.remmina &'
+alias src-rdp2='remmina -c ~/.remmina/pts2.remmina &'
+alias src-rdpsas='remmina -c ~/.remmina/psas1.remmina &'
+alias src-mnz='sudo mount //vdc1/zdrive/ /srcentre/zdrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+alias src-mno='sudo mount //pdc1/odrive/ /srcentre/odrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+alias src-mnmydoc='sudo mount //vdc1/userprofiles/Documents/dsmith/My\ Documents /srcentre/mydocs -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+
+alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
+
+
 export PATH=$HOME/local/bin/:$PATH
 
 
