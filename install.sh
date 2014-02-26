@@ -77,6 +77,8 @@ mkdir -p $HOME/local/bin
 # [gconf]
  mkdir -p $HOME/.fonts
  ln -sf ${repohome}/_fonts/SourceCodePro-Semibold-Powerline.otf $HOME/.fonts/
+ ln -sf ${repohome}/_fonts/PowerlineSymbols.otf $HOME/.fonts/
+ ln -sfT ${repohome}/_fonts/powerline-fonts $HOME/powerline-fonts
 #if exists gconftool-2; then
 #  # gconftool-2 --dump '/apps/gnome-terminal' > gconf/gnome-terminal_gconf_settings.xml
 #  gconftool-2 --load ${repohome}/gconf/gnome-terminal_gconf_settings.xml

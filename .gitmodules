@@ -28,3 +28,6 @@
 [submodule "bin/rupa_v"]
 	path = bin/rupa_v
 	url = https://github.com/rupa/v.git
+[submodule "_fonts/powerline-fonts"]
+	path = _fonts/powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts.git
