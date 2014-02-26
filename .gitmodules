@@ -22,3 +22,6 @@
 [submodule "bin/gibo"]
 	path = bin/gibo
 	url = https://github.com/simonwhitaker/gibo.git
+[submodule "bin/hub"]
+	path = bin/hub
+	url = git://github.com/github/hub.git

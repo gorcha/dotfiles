@@ -1,5 +1,7 @@
 #!/bin/bash
-# TODO add node ubuntu repo and npm -g install instant-markdown-d
+
+## Adapted from Giuseppe Rota's dotfiles project
+##   https://github.com/grota/dotfiles
 
 set -e
 
@@ -24,9 +26,6 @@ git submodule update --init --recursive
 
 ## [bin]
 mkdir -p $HOME/local/bin
-# ln -sf ${repohome}/bin/vimdirdiff.sh $HOME/local/bin/vimdirdiff.sh
-# ln -sf ${repohome}/bin/rupa_v/v $HOME/local/bin/v
-# ln -sf ${repohome}/bin/bd $HOME/local/bin/bd
 ln -sf ${repohome}/bin/gibo/gibo $HOME/local/bin/gibo
 
 ## [Bash]
@@ -39,31 +38,13 @@ ln -sf ${repohome}/bin/gibo/gibo $HOME/local/bin/gibo
  ln -sfT ${repohome}/zsh/oh-my-zsh $HOME/.oh-my-zsh
  ln -sf ${repohome}/zsh/_zshrc $HOME/.zshrc
 
-## [autojump]
-# cd ${repohome}/bin/autojump
-## hardcoded installation to $HOME/.autojump
-# ./install.sh --local > /dev/null
-
-## [hub]
-# cd ${repohome}
-# if [[ ! -f $HOME/local/bin/hub ]]; then
-#   cd vendor/hub
-#   rake install prefix=$HOME/local
-#   cd ${repohome}
-# fi
-
-## [composer]
-# if ! exists composer; then
-#   curl -sS https://getcomposer.org/installer | php
-#   mv composer.phar $HOME/local/bin/composer
-# fi
-# # php's psysh https://github.com/bobthecow/psysh
-# if [ ! -d $HOME/.psysh ]; then
-#   mkdir $HOME/.psysh
-# fi
-# if [ ! -f $HOME/.psysh/php_manual.sqlite ]; then
-#   curl -sS http://psysh.org/manual/en/php_manual.sqlite > $HOME/.psysh/php_manual.sqlite
-# fi
+# [hub]
+ cd ${repohome}
+ if [[ ! -f $HOME/local/bin/hub ]]; then
+   cd bin/hub
+   rake install prefix=$HOME/local
+   cd ${repohome}
+ fi
 
 # [vim]
  ln -sf ${repohome}/vim/vimrc $HOME/.vimrc
