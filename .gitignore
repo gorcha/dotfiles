@@ -1,0 +1,8 @@
+/vim/vimrc_cati
+/vim/vimrc_pweb
+
+# vim ignores
+.*.swp
+Session.vim
+.netrwhist
+*~
