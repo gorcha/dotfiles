@@ -56,6 +56,9 @@ alias vx='vim -R'
 alias vvi='vim'
 alias vd='vimdiff'
 
+#git
+alias gsubp='git submodule foreach git pull origin master'
+
 # VPN
 #alias vicstart='sudo /etc/openvpn/vicstart.sh'
 #alias vicstop='sudo /etc/openvpn/vicstop.sh'
