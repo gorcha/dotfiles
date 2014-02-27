@@ -6,3 +6,6 @@
 Session.vim
 .netrwhist
 *~
+
+# ignore PortableGit for now
+/win/PortableGit*
