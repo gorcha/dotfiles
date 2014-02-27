@@ -54,6 +54,7 @@ alias vo='vim -O'
 alias vp='vim -p'
 alias vx='vim -R'
 alias vvi='vim'
+alias vd='vimdiff'
 
 # VPN
 #alias vicstart='sudo /etc/openvpn/vicstart.sh'
