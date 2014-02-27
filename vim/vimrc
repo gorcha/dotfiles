@@ -142,6 +142,7 @@ map <F2> :NERDTreeToggle<cr>
 map <F3> :NERDTreeMirror<cr>
 let NERDTreeIgnore=['\~$']
 let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=2
 
 " Shortcuts for diff
 map <F4> :set invdiff<CR>:set invscrollbind<CR>

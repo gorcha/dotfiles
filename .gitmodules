@@ -18,7 +18,7 @@
 	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/dotvim/bundle/nerdtree"]
 	path = vim/dotvim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = https://github.com/gorcha/nerdtree.git
 [submodule "bin/gibo"]
 	path = bin/gibo
 	url = https://github.com/simonwhitaker/gibo.git
