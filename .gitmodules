@@ -31,3 +31,9 @@
 [submodule "_fonts/powerline-fonts"]
 	path = _fonts/powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
+[submodule "vim/dotvim/bundle/supertab"]
+	path = vim/dotvim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "vim/dotvim/bundle/syntastic"]
+	path = vim/dotvim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
