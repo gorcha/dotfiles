@@ -37,3 +37,6 @@
 [submodule "vim/dotvim/bundle/syntastic"]
 	path = vim/dotvim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "vim/dotvim/bundle/python-mode"]
+	path = vim/dotvim/bundle/python-mode
+	url = git://github.com/klen/python-mode.git

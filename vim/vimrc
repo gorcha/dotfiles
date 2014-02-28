@@ -1,5 +1,9 @@
+let g:pathogen_disabled = []
+
+call add(g:pathogen_disabled, 'python-mode')
 
 execute pathogen#infect()
+execute pathogen#helptags()
 
 if has('autocmd')
   filetype plugin indent on
@@ -21,7 +25,8 @@ set smartindent
 
 set modeline
 
-set statusline=%<%f\ [TYPE=%Y\ %{&ff}]\ %h%m%r%w%=%-14.(%l,%c%V%)\ %P
+"set statusline=%<%f\ [TYPE=%Y\ %{&ff}]\ %h%m%r%w%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ [TYPE=%Y\ %{&ff}]\ %h%m%r%w\ %{SyntasticStatuslineFlag()}%=%-14.(%l,%c%V%)\ %P
 "set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\ (%p%%)
 
 set autoindent
@@ -139,11 +144,11 @@ au FileType c,r,python,java match OverLength /\%81v.\+/
 """" Function key shortcuts """"
 
 " Shortcuts for NERDTree
-map <F2> :NERDTreeToggle<cr>
-map <F3> :NERDTreeMirror<cr>
 let NERDTreeIgnore=['\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=2
+map <F2> :NERDTreeToggle<cr>
+map <F3> :NERDTreeMirror<cr>
 
 " TagList Plugin Configuration
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
@@ -158,12 +163,34 @@ map <F5> :set invdiff<CR>:set invscrollbind<CR>
 map <F6> :diffget<CR>
 map <F7> :diffput<CR>
 
-map <F8> :!make<CR>
-imap <F8> <ESC>:!make<CR>
-
 " completion
-imap <F9> <C-N><C-P>
-map <F9> i<C-N><C-P>
+imap <F8> <C-N><C-P>
+map <F8> i<C-N><C-P>
+
+" Syntastic setup
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+"let g:syntastic_error_symbol = '✘'
+"let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_mode_map = { 'mode': 'passive',
+                            \ 'active_filetypes': [],
+                            \ 'passive_filetypes': [] }
+
+command -bang -nargs=? ToggleErrors call SyntasticToggleErrors(<bang>0)
+function! SyntasticToggleErrors(forced)
+  if (!exists("g:syntastic_errors_on") || g:syntastic_errors_on == 1) && a:forced == 0
+    lclose
+    let g:syntastic_errors_on = 0
+  else
+    lopen
+    let g:syntastic_errors_on = 1
+  endif
+endfunction
+
+map <F9> :SyntasticCheck<CR>
+imap <F9> <ESC>:SyntasticCheck<CR>
+map <F10> :ToggleErrors<CR>
+imap <F10> <ESC>:ToggleErrors<CR>
 
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
 "nnoremap <silent> <F10> :BufExplorer<CR>
