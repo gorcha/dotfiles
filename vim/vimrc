@@ -21,7 +21,8 @@ set smartindent
 
 set modeline
 
-"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ [TYPE=%Y\ %{&ff}]\ %h%m%r%w%=%-14.(%l,%c%V%)\ %P
+"set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ \ [%l/%L\ (%p%%)
 
 set autoindent
 set backspace=indent,eol,start
@@ -144,10 +145,18 @@ let NERDTreeIgnore=['\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=2
 
+" TagList Plugin Configuration
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Close_On_Select = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_File_Fold_Auto_Close = 1
+map <F4> :TlistToggle<CR>
+
 " Shortcuts for diff
-map <F4> :set invdiff<CR>:set invscrollbind<CR>
-map <F5> :diffget<CR>
-map <F6> :diffput<CR
+map <F5> :set invdiff<CR>:set invscrollbind<CR>
+map <F6> :diffget<CR>
+map <F7> :diffput<CR>
 
 map <F8> :!make<CR>
 imap <F8> <ESC>:!make<CR>
