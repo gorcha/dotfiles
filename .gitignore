@@ -9,3 +9,4 @@ Session.vim
 
 # ignore PortableGit for now
 /win/PortableGit*
+/win/ctags*

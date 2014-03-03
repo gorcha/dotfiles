@@ -113,14 +113,14 @@ colorscheme solarized
 
 if has('gui_running')
 	set guifont=Consolas:h11:cANSI
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    "set guioptions-=L  "remove left-hand scroll bar
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
+  set guioptions-=r  "remove right-hand scroll bar
+  "set guioptions-=L  "remove left-hand scroll bar
 
-    nnoremap <C-F2> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-    nnoremap <C-F3> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-    nnoremap <C-F4> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+  nnoremap <C-F2> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+  nnoremap <C-F3> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
+  nnoremap <C-F4> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 endif
 
 
@@ -151,7 +151,11 @@ map <F2> :NERDTreeToggle<cr>
 map <F3> :NERDTreeMirror<cr>
 
 " TagList Plugin Configuration
-let Tlist_Ctags_Cmd='/usr/bin/ctags'
+if has('win32')
+  let Tlist_Ctags_Cmd='"%HOMEPATH%/local/bin/ctags/ctags.exe"'
+else
+  let Tlist_Ctags_Cmd='/usr/bin/ctags'
+endif
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
 let Tlist_Use_Right_Window = 1
