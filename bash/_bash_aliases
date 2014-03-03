@@ -2,8 +2,8 @@
 
 ### enable colour support
 alias ls='ls $LS_OPTIONS'
-#alias dir='dir $LS_OPTIONS'
-#alias vdir='vdir $LS_OPTIONS'
+alias dir='dir $LS_OPTIONS'
+alias vdir='vdir $LS_OPTIONS'
 
 alias grep='grep $LS_OPTIONS'
 #alias fgrep='fgrep $LS_OPTIONS'
@@ -25,7 +25,7 @@ alias aptitude='sudo aptitude'
 
 #vim
 alias vs='sudo vim'
-alias vo='vim -O' 
+alias vo='vim -O'
 alias vp='vim -p'
 alias vx='vim -R'
 alias vvi='vim'

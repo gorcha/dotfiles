@@ -10,4 +10,4 @@
 [web]
 	browser = google-chrome
 [push]
-	default = simple
+	default = current
