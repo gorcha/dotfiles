@@ -3,3 +3,8 @@
 --regex-R=/^[ \t]*"?([.A-Za-z][.A-Za-z0-9_]*)"?[ \t]*<-[ \t]function/\1/f,Functions/
 --regex-R=/^"?([.A-Za-z][.A-Za-z0-9_]*)"?[ \t]*<-[ \t][^f][^u][^n][^c][^t][^i][^o][^n]/\1/g,GlobalVars/ 
 --regex-R=/[ \t]"?([.A-Za-z][.A-Za-z0-9_]*)"?[ \t]*<-[ \t][^f][^u][^n][^c][^t][^i][^o][^n]/\1/v,FunctionVariables/
+
+--langdef=SPS
+--langmap=sps:.sps
+--regex-SPS=/^[ \t]*def[A-Za-z]* ([!@#$A-Za-z][!@#$%^&*A-Za-z0-9_-]*) \(/\1/m,Macros/i
+--regex-SPS=/^[ \t]*file han[A-Za-z]* ([!@#$A-Za-z][!@#$%^&*A-Za-z0-9_-]*) /\1/f,FileHandles/i

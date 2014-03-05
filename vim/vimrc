@@ -175,6 +175,7 @@ if s:tags == 'taglist'
   let Tlist_File_Fold_Auto_Close = 1
   " add r support
   let tlist_r_settings = 'R;f:Functions;g:GlobalVariables;v:FunctionVariables'
+  let tlist_sps_settings = 'SPS;m:Macros'
   map <F4> :TlistToggle<CR>
 
 " Tagbar
@@ -188,6 +189,13 @@ elseif s:tags == 'tagbar'
           \ 'f:Functions',
           \ 'g:GlobalVariables',
           \ 'v:FunctionVariables',
+      \ ]
+  \ }
+  let g:tagbar_type_sps = {
+      \ 'ctagstype' : 'sps',
+      \ 'kinds'     : [
+          \ 'm:Macros',
+          \ 'f:File Handles',
       \ ]
   \ }
   map <F4> :TagbarToggle<CR>
