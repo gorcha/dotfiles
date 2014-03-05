@@ -13,7 +13,9 @@ set PATH=%PATH%;%homepath%\local\bin
 
 REM [git]
 mklink /J "%homepath%\local\bin\git" "%repohome%win\PortableGit\"
+mklink /J "%homepath%\local\bin\ctags" "%repohome%win\ctags58\"
 set PATH=%PATH%;%homepath%\local\bin\git\bin
+set PATH=%PATH%;%homepath%\local\bin\git\ctags
 git submodule update --init --recursive
 
 REM [vim]
