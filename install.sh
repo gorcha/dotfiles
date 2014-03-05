@@ -146,7 +146,7 @@ mkdir -p $HOME/local/bin
 # ln -sf private/rtorrent ${repohome}
 
 ## [ctags]
-# ln -sf ${repohome}/ctags/_ctags $HOME/.ctags
+ ln -sf ${repohome}/ctags/_ctags $HOME/.ctags
 
 ## [mercurial]
 # ln -sf  ${repohome}/mercurial/_hgrc $HOME/.hgrc
