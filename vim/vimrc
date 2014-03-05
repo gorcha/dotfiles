@@ -134,12 +134,13 @@ au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,fi
 
 " recognise spss syntax files
 au BufRead,BufNewFile *.sps set filetype=sps
-au FileType sps set commentstring=\*%s
 
 " higlight lines over 80 chars for some file types
 highlight OverLength ctermbg=red ctermfg=DarkGrey guibg=DarkRed 
 au FileType c,r,python,java match OverLength /\%81v.\+/
 
+" comment strings
+au FileType r set commentstring=#\ %s
 
 """" Function key shortcuts """"
 
