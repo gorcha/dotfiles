@@ -111,6 +111,7 @@ let solarized_termtrans=1
 colorscheme solarized
 
 
+
 """" GUI stuff """"
 
 if has('gui_running')
@@ -124,6 +125,7 @@ if has('gui_running')
   nnoremap <C-F3> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
   nnoremap <C-F4> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 endif
+
 
 
 """" File type commands """"
@@ -145,7 +147,10 @@ au FileType c,r,python,java match OverLength /\%81v.\+/
 au FileType r set commentstring=#\ %s
 au FileType sps set commentstring=\*%s
 
+
+
 """" Function key shortcuts """"
+
 
 " Shortcuts for NERDTree
 let NERDTreeIgnore=['\~$']
@@ -153,6 +158,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=2
 map <F2> :NERDTreeToggle<cr>
 map <F3> :NERDTreeMirror<cr>
+
 
 " Tag Plugin Configuration (either tagbar or taglist)
 
@@ -189,14 +195,17 @@ elseif s:tags == 'tagbar'
 endif
 unlet! s:tags
 
+
 " Shortcuts for diff
 map <F5> :set invdiff<CR>:set invscrollbind<CR>
 map <F6> :diffget<CR>
 map <F7> :diffput<CR>
 
+
 " completion
 imap <F8> <C-N><C-P>
 map <F8> i<C-N><C-P>
+
 
 " Syntastic setup
 let g:syntastic_check_on_open = 1
@@ -218,10 +227,12 @@ function! SyntasticToggleErrors(forced)
   endif
 endfunction
 
+
 map <F9> :SyntasticCheck<CR>
 imap <F9> <ESC>:SyntasticCheck<CR>
 map <F10> :ToggleErrors<CR>
 imap <F10> <ESC>:ToggleErrors<CR>
+
 
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
 "nnoremap <silent> <F10> :BufExplorer<CR>

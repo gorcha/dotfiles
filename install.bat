@@ -19,6 +19,7 @@ set PATH=%PATH%;%homepath%\local\bin\git\ctags
 git submodule update --init --recursive
 
 REM [vim]
+del "%homepath%\_vimrc"
 mklink /H "%homepath%\_vimrc" "%repohome%vim\vimrc"
 mklink /J "%homepath%\vimfiles" "%repohome%vim\dotvim"
 
