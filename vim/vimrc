@@ -1,6 +1,7 @@
 let g:pathogen_disabled = []
 
 call add(g:pathogen_disabled, 'python-mode')
+call add(g:pathogen_disabled, 'tagbar')
 
 execute pathogen#infect()
 execute pathogen#helptags()

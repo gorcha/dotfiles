@@ -40,3 +40,6 @@
 [submodule "vim/dotvim/bundle/python-mode"]
 	path = vim/dotvim/bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+[submodule "vim/dotvim/bundle/tagbar"]
+	path = vim/dotvim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
