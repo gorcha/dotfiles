@@ -160,6 +160,8 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_File_Fold_Auto_Close = 1
+" add r support
+let tlist_r_settings = 'R;f:Functions;g:GlobalVariables;v:FunctionVariables'
 map <F4> :TlistToggle<CR>
 
 " Shortcuts for diff

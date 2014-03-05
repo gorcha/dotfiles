@@ -72,6 +72,7 @@ alias src-mnz='sudo mount //vdc1/zdrive/ /srcentre/zdrive -t cifs -o credentials
 alias src-mno='sudo mount //pdc1/odrive/ /srcentre/odrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
 alias src-mnr='sudo mount //cati2/projects/ /srcentre/rdrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
 alias src-mnmydoc='sudo mount //vdc1/userprofiles/Documents/dsmith/My\ Documents /srcentre/mydocs -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
+alias src-umnt='sudo umount /srcentre/*'
 
 alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
 
