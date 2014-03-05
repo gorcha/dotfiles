@@ -1,7 +1,8 @@
 let g:pathogen_disabled = []
 
 call add(g:pathogen_disabled, 'python-mode')
-call add(g:pathogen_disabled, 'tagbar')
+call add(g:pathogen_disabled, 'taglist')
+let s:tags='tagbar'
 
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -151,19 +152,40 @@ let NERDTreeChDirMode=2
 map <F2> :NERDTreeToggle<cr>
 map <F3> :NERDTreeMirror<cr>
 
-" TagList Plugin Configuration
-if has('win32')
-  let Tlist_Ctags_Cmd='"%HOMEPATH%/local/bin/ctags/ctags.exe"'
-else
-  let Tlist_Ctags_Cmd='/usr/bin/ctags'
+" Tag Plugin Configuration (either tagbar or taglist)
+
+" Taglist
+if s:tags == 'taglist'
+  if has('win32')
+    let Tlist_Ctags_Cmd='"%HOMEPATH%/local/bin/ctags/ctags.exe"'
+  else
+    let Tlist_Ctags_Cmd='/usr/bin/ctags'
+  endif
+  let Tlist_GainFocus_On_ToggleOpen = 1
+  let Tlist_Close_On_Select = 1
+  let Tlist_Use_Right_Window = 1
+  let Tlist_File_Fold_Auto_Close = 1
+  " add r support
+  let tlist_r_settings = 'R;f:Functions;g:GlobalVariables;v:FunctionVariables'
+  map <F4> :TlistToggle<CR>
+
+" Tagbar
+elseif s:tags == 'tagbar'
+  let g:tagbar_autoclose = 1
+  let g:tagbar_autofocus = 1
+  " add r support
+  let g:tagbar_type_r = {
+      \ 'ctagstype' : 'r',
+      \ 'kinds'     : [
+          \ 'f:Functions',
+          \ 'g:GlobalVariables',
+          \ 'v:FunctionVariables',
+      \ ]
+  \ }
+  map <F4> :TagbarToggle<CR>
+
 endif
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Close_On_Select = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_File_Fold_Auto_Close = 1
-" add r support
-let tlist_r_settings = 'R;f:Functions;g:GlobalVariables;v:FunctionVariables'
-map <F4> :TlistToggle<CR>
+unlet! s:tags
 
 " Shortcuts for diff
 map <F5> :set invdiff<CR>:set invscrollbind<CR>
