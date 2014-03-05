@@ -143,6 +143,7 @@ au FileType c,r,python,java match OverLength /\%81v.\+/
 
 " comment strings
 au FileType r set commentstring=#\ %s
+au FileType sps set commentstring=\*%s
 
 """" Function key shortcuts """"
 

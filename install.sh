@@ -41,12 +41,12 @@ mkdir -p $HOME/local/bin
  ln -sf ${repohome}/zsh/_zshrc $HOME/.zshrc
 
 # [hub]
- cd ${repohome}
- if [[ ! -f $HOME/local/bin/hub ]]; then
-   cd bin/hub
-   rake install prefix=$HOME/local
-   cd ${repohome}
- fi
+ # cd ${repohome}
+ # if [[ ! -f $HOME/local/bin/hub ]]; then
+ #   cd bin/hub
+ #   rake install prefix=$HOME/local
+ #   cd ${repohome}
+ # fi
 
 # [vim]
  ln -sf ${repohome}/vim/vimrc $HOME/.vimrc
