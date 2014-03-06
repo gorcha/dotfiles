@@ -115,7 +115,9 @@ colorscheme solarized
 """" GUI stuff """"
 
 if has('gui_running')
-	set guifont=Consolas:h11:cANSI
+  if has('win32')
+    set guifont=Consolas:h11:cANSI
+  endif
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
   set guioptions-=r  "remove right-hand scroll bar
@@ -157,7 +159,7 @@ let NERDTreeIgnore=['\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeChDirMode=2
 map <F2> :NERDTreeToggle<cr>
-map <F3> :NERDTreeMirror<cr>
+map <C-F2> :NERDTreeMirror<cr>
 
 
 " Tag Plugin Configuration (either tagbar or taglist)
@@ -176,7 +178,7 @@ if s:tags == 'taglist'
   " add r support
   let tlist_r_settings = 'R;f:Functions;g:GlobalVariables;v:FunctionVariables'
   let tlist_sps_settings = 'SPS;m:Macros'
-  map <F4> :TlistToggle<CR>
+  map <F3> :TlistToggle<CR>
 
 " Tagbar
 elseif s:tags == 'tagbar'
@@ -198,21 +200,21 @@ elseif s:tags == 'tagbar'
           \ 'f:File Handles',
       \ ]
   \ }
-  map <F4> :TagbarToggle<CR>
+  map <F3> :TagbarToggle<CR>
 
 endif
 unlet! s:tags
 
 
 " Shortcuts for diff
-map <F5> :set invdiff<CR>:set invscrollbind<CR>
-map <F6> :diffget<CR>
-map <F7> :diffput<CR>
+map <F4> :set invdiff<CR>:set invscrollbind<CR>
+map <F5> :diffget<CR>
+map <F6> :diffput<CR>
 
 
 " completion
-imap <F8> <C-N><C-P>
-map <F8> i<C-N><C-P>
+"imap <F8> <C-N><C-P>
+"map <F8> i<C-N><C-P>
 
 
 " Syntastic setup
@@ -244,6 +246,6 @@ imap <F10> <ESC>:ToggleErrors<CR>
 
 " Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
 "nnoremap <silent> <F10> :BufExplorer<CR>
-nnoremap <F11> :bprev<CR>
-nnoremap <F12> :bnext<CR>
+nnoremap <C-F12> :bprev<CR>
+nnoremap <M-F12> :bnext<CR>
 
