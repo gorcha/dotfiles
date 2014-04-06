@@ -133,7 +133,7 @@ endif
 """" File type commands """"
 
 " set shorter shift width for some file types
-au FileType c,r,html,vim setlocal tabstop=2 shiftwidth=2
+au FileType c,r,html,vim,javascript,css setlocal tabstop=2 shiftwidth=2
 
 " smart indenting for python files
 au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
