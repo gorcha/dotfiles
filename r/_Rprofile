@@ -1,0 +1,7 @@
+
+.First <- function() {
+  library(stringr)
+  library(devtools)
+  library(data.table)
+  cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
+}

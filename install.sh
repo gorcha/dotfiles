@@ -168,5 +168,8 @@ mkdir -p $HOME/local/bin
 #${repohome}/private/install.sh
 #echo "dotfiles installed"
 
+## [R]
+ ln -sf ${repohome}/r/_Rprofile $HOME/.Rprofile
+
 ## NOTES:
 ## The old vimperator stuff has been removed but can be found in the git history, see commit after 8b619de
