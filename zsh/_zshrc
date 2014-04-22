@@ -59,6 +59,9 @@ alias vd='vimdiff'
 #git
 alias gsubp='git submodule foreach git pull origin master'
 
+#memory usage
+alias psm='ps aux | awk '"'"'{print $6, "\t", $11}'"'"' | sort -n'
+
 # VPN
 #alias vicstart='sudo /etc/openvpn/vicstart.sh'
 #alias vicstop='sudo /etc/openvpn/vicstop.sh'

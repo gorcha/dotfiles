@@ -1,7 +1,8 @@
 
 .First <- function() {
   library(stringr)
+  library(plyr)
   library(devtools)
   library(data.table)
-  cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
+  #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
 }
