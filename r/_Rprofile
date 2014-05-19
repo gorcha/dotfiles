@@ -6,3 +6,5 @@
   library(data.table)
   #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
 }
+
+javagc <- function() { .jcall("java/lang/System",,"gc") }
