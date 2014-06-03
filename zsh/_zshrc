@@ -81,7 +81,7 @@ alias src-umnt='sudo umount /srcentre/*'
 alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
 
 
-export PATH=$HOME/local/bin/:$PATH
+export PATH=$HOME/local/bin/:$HOME/.cabal/bin/:$PATH
 
 
 #[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
