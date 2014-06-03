@@ -5,6 +5,7 @@ call add(g:pathogen_disabled, 'python-mode')
 "let s:tags='tagbar'
 call add(g:pathogen_disabled, 'tagbar')
 let s:tags='taglist'
+call add(g:pathogen_disabled, 'ShowMarks')
 
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -213,6 +214,12 @@ map <F4> :set invdiff<CR>:set invscrollbind<CR>
 map <F5> :diffget<CR>
 map <F6> :diffput<CR>
 
+" GUndo
+map <F7> :GundoToggle<CR>
+
+"CtrlP
+map <C-P> :CtrlP<CR>
+imap <ESC><C-P> :CtrlP<CR>
 
 " completion
 "imap <F8> <C-N><C-P>

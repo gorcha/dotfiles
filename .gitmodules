@@ -49,3 +49,39 @@
 [submodule "vim/dotvim/bundle/ShowMarks"]
 	path = vim/dotvim/bundle/ShowMarks
 	url = git://github.com/vim-scripts/ShowMarks.git
+[submodule "vim/dotvim/bundle/vimwiki"]
+	path = vim/dotvim/bundle/vimwiki
+	url = git://github.com/vim-scripts/vimwiki.git
+[submodule "vim/dotvim/bundle/vim-css-color"]
+	path = vim/dotvim/bundle/vim-css-color
+	url = git://github.com/ap/vim-css-color.git
+[submodule "vim/dotvim/bundle/gist-vim"]
+	path = vim/dotvim/bundle/gist-vim
+	url = git://github.com/mattn/gist-vim.git
+[submodule "vim/dotvim/bundle/vim-eunuch"]
+	path = vim/dotvim/bundle/vim-eunuch
+	url = git://github.com/tpope/vim-eunuch.git
+[submodule "vim/dotvim/bundle/gundo.vim"]
+	path = vim/dotvim/bundle/gundo.vim
+	url = git://github.com/sjl/gundo.vim.git
+[submodule "vim/dotvim/bundle/vim-matchit"]
+	path = vim/dotvim/bundle/vim-matchit
+	url = git://github.com/edsono/vim-matchit.git
+[submodule "vim/dotvim/bundle/vim-multiple-cursors"]
+	path = vim/dotvim/bundle/vim-multiple-cursors
+	url = git://github.com/terryma/vim-multiple-cursors.git
+[submodule "vim/dotvim/bundle/NrrwRgn"]
+	path = vim/dotvim/bundle/NrrwRgn
+	url = git://github.com/chrisbra/NrrwRgn.git
+[submodule "vim/dotvim/bundle/tabular"]
+	path = vim/dotvim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/dotvim/bundle/vim-easymotion"]
+	path = vim/dotvim/bundle/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/dotvim/bundle/ctrlp.vim"]
+	path = vim/dotvim/bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "vim/dotvim/bundle/ZoomWin"]
+	path = vim/dotvim/bundle/ZoomWin
+	url = git://github.com/itspriddle/ZoomWin.git
