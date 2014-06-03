@@ -43,3 +43,6 @@
 [submodule "vim/dotvim/bundle/tagbar"]
 	path = vim/dotvim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/dotvim/bundle/Vim-R-plugin"]
+	path = vim/dotvim/bundle/Vim-R-plugin
+	url = git://github.com/jcfaria/Vim-R-plugin.git
