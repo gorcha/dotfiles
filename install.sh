@@ -59,7 +59,7 @@ mkdir -p $HOME/local/bin
 # ln -sf ${repohome}/git/_gitk $HOME/.gitk
 
 ## [tmux]
-# ln -sf ${repohome}/tmux/_tmux.conf $HOME/.tmux.conf
+ln -sf ${repohome}/tmux/_tmux.conf $HOME/.tmux.conf
 
 ## [drush]
 # ln -sf ${repohome}/bash/_drush_bashrc $HOME/.drush_bashrc
