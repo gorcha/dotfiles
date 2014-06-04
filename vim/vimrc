@@ -136,7 +136,7 @@ endif
 """" File type commands """"
 
 " set shorter shift width for some file types
-au FileType c,cpp,r,html,vim,javascript,css setlocal tabstop=2 shiftwidth=2
+au FileType c,cpp,r,rmd,html,vim,javascript,css setlocal tabstop=2 shiftwidth=2
 
 " smart indenting for python files
 au FileType python set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -271,3 +271,5 @@ endif
 " Press the space bar to send lines (in Normal mode) and selections to R:
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
+" Disable replaceing _ with <-
+let vimrplugin_assign = 0
