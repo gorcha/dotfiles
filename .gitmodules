@@ -85,3 +85,6 @@
 [submodule "vim/dotvim/bundle/ZoomWin"]
 	path = vim/dotvim/bundle/ZoomWin
 	url = git://github.com/itspriddle/ZoomWin.git
+[submodule "vim/dotvim/bundle/webapi-vim"]
+	path = vim/dotvim/bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim

@@ -11,3 +11,5 @@
 	browser = google-chrome
 [push]
 	default = current
+[github]
+	user = gorcha
