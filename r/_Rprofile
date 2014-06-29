@@ -1,9 +1,9 @@
 
 .First <- function() {
-  library(stringr)
-  library(plyr)
-  library(devtools)
-  library(data.table)
+  require(stringr)
+  require(dplyr)
+  require(devtools)
+  require(data.table)
   #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
 }
 
