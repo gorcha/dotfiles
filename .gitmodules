@@ -88,3 +88,6 @@
 [submodule "vim/dotvim/bundle/webapi-vim"]
 	path = vim/dotvim/bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim
+[submodule "vim/dotvim/bundle/vim-markdown"]
+	path = vim/dotvim/bundle/vim-markdown
+	url = git://github.com/plasticboy/vim-markdown.git
