@@ -113,6 +113,7 @@ set background=dark
 let solarized_termtrans=1
 colorscheme solarized
 
+let g:vimwiki_folding=1
 
 
 """" GUI stuff """"
@@ -151,6 +152,8 @@ au FileType c,r,python,java match OverLength /\%81v.\+/
 " comment strings
 au FileType r set commentstring=#\ %s
 au FileType sps set commentstring=\*%s
+
+au FileType vimwiki setlocal tabstop=2 shiftwidth=2
 
 
 

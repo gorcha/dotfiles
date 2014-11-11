@@ -91,3 +91,6 @@
 [submodule "vim/dotvim/bundle/vim-markdown"]
 	path = vim/dotvim/bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "vim/dotvim/bundle/vim-mdx"]
+	path = vim/dotvim/bundle/vim-mdx
+	url = git://github.com/findango/vim-mdx.git
