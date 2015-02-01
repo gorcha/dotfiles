@@ -1,9 +1,9 @@
 
 .First <- function() {
-  require(stringr)
-  require(dplyr)
+  # require(stringr)
+  # require(dplyr)
   #require(devtools)
-  require(data.table)
+  # require(data.table)
   options(repos = c(CRAN = "http://cran.rstudio.com/"),
           browserNLdisabled = TRUE,
           deparse.max.lines = 2)
@@ -24,7 +24,4 @@ if(interactive()){
   # library(colorout)
   # library(setwidth)
   library(vimcom)
-  # See R documentation on Vim buffer even if asking for help in R Console:
-  if(Sys.getenv("VIM_PANE") != "")
-    options(pager = vim.pager)
 }
