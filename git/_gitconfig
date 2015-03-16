@@ -13,3 +13,5 @@
 	default = current
 [github]
 	user = gorcha
+[credential]
+	helper = cache --timeout=3600
