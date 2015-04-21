@@ -94,3 +94,6 @@
 [submodule "vim/dotvim/bundle/vim-mdx"]
 	path = vim/dotvim/bundle/vim-mdx
 	url = git://github.com/findango/vim-mdx.git
+[submodule "vim/dotvim/bundle/R-Vim-runtime"]
+	path = vim/dotvim/bundle/R-Vim-runtime
+	url = git://github.com/jalvesaq/R-Vim-runtime.git
