@@ -79,8 +79,8 @@ alias src-mnr='sudo mount //cati2/projects/ /srcentre/rdrive -t cifs -o credenti
 alias src-mnmydoc='sudo mount //vdc1/userprofiles/Documents/dsmith/My\ Documents /srcentre/mydocs -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
 alias src-umnt='sudo umount /srcentre/*'
 
-alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
-
+#alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
+alias src-mmon="/opt/freerdp-nightly/bin/xfreerdp /u:dsmith /p:wtirCRS3233 /d:srcentre -grab-keyboard /f /multimon +clipboard /v:$1"
 
 export PATH=$HOME/local/bin/:$HOME/.cabal/bin/:$PATH
 
