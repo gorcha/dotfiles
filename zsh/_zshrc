@@ -40,51 +40,15 @@ plugins=(git colorize rvm)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
-alias x='exit'
+# Alias definitions.
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias aptitude='sudo aptitude'
-
-#vim
-alias vs='sudo vim'
-alias vo='vim -O' 
-alias vp='vim -p'
-alias vx='vim -R'
-alias vvi='vim'
-alias vd='vimdiff'
-
-#git
-alias gsubp='git submodule foreach git pull origin master'
-
-#memory usage
-alias psm='ps aux | awk '"'"'{print $6, "\t", $11}'"'"' | sort -n'
-alias psm-watch="watch 'ps aux | awk '"'"'"'"'"'"'{print "'$6'", "'"'""'\t'""'"'", "'$11'"}'"'"'"'"'"'"' | sort -rn'"
-
-# VPN
-#alias vicstart='sudo /etc/openvpn/vicstart.sh'
-#alias vicstop='sudo /etc/openvpn/vicstop.sh'
-alias src-sfcati='sftp dsmith@cati2'
-alias src-rdv='remmina -c ~/.remmina/vts1.remmina &'
-alias src-rdv2='remmina -c ~/.remmina/vts2.remmina &'
-alias src-rdp='remmina -c ~/.remmina/pts1.remmina &'
-alias src-rdp2='remmina -c ~/.remmina/pts2.remmina &'
-alias src-rdpsas='remmina -c ~/.remmina/psas1.remmina &'
-alias src-rdsql='remmina -c ~/.remmina/sql.remmina &'
-alias src-mnz='sudo mount //vdc1/zdrive/ /srcentre/zdrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
-alias src-mno='sudo mount //pdc1/odrive/ /srcentre/odrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
-alias src-mnr='sudo mount //cati2/projects/ /srcentre/rdrive -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
-alias src-mnmydoc='sudo mount //vdc1/userprofiles/Documents/dsmith/My\ Documents /srcentre/mydocs -t cifs -o credentials=/home/danny/.srcentre,uid=danny,gid=danny'
-alias src-umnt='sudo umount /srcentre/*'
-
-#alias src-mmon='xfreerdp -u dsmith -d srcentre -K -f --plugin cliprdr'
-alias src-mmon="/opt/freerdp-nightly/bin/xfreerdp /u:dsmith /p:wtirCRS3233 /d:srcentre -grab-keyboard /f /multimon +clipboard /v:$1"
-
-export PATH=$HOME/local/bin/:$HOME/.cabal/bin/:$PATH
-
-tvim () { tmux new-session "vim --servername VIM $*" }
+# Local machine bash commands (not in dotfiles)
+if [ -f ~/.zsh_local ]; then
+    . ~/.zsh_local
+fi
 
 #[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 #autoload -U compinit && compinit
