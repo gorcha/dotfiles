@@ -39,6 +39,7 @@ mkdir -p $HOME/local/bin
 # [zsh]
  ln -sfT ${repohome}/zsh/oh-my-zsh $HOME/.oh-my-zsh
  ln -sf ${repohome}/zsh/_zshrc $HOME/.zshrc
+ ln -sf ${repohome}/zsh/_zsh_aliases $HOME/.zsh_aliases
 
 # [hub]
  # cd ${repohome}
