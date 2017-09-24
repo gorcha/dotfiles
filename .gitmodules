@@ -49,9 +49,6 @@
 [submodule "vim/dotvim/bundle/ShowMarks"]
 	path = vim/dotvim/bundle/ShowMarks
 	url = git://github.com/vim-scripts/ShowMarks.git
-[submodule "vim/dotvim/bundle/vimwiki"]
-	path = vim/dotvim/bundle/vimwiki
-	url = git://github.com/vim-scripts/vimwiki.git
 [submodule "vim/dotvim/bundle/vim-css-color"]
 	path = vim/dotvim/bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
@@ -82,9 +79,6 @@
 [submodule "vim/dotvim/bundle/ctrlp.vim"]
 	path = vim/dotvim/bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "vim/dotvim/bundle/ZoomWin"]
-	path = vim/dotvim/bundle/ZoomWin
-	url = git://github.com/itspriddle/ZoomWin.git
 [submodule "vim/dotvim/bundle/webapi-vim"]
 	path = vim/dotvim/bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim
