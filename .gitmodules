@@ -43,27 +43,9 @@
 [submodule "vim/dotvim/bundle/tagbar"]
 	path = vim/dotvim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "vim/dotvim/bundle/Vim-R-plugin"]
-	path = vim/dotvim/bundle/Vim-R-plugin
-	url = git://github.com/jcfaria/Vim-R-plugin.git
-[submodule "vim/dotvim/bundle/ShowMarks"]
-	path = vim/dotvim/bundle/ShowMarks
-	url = git://github.com/vim-scripts/ShowMarks.git
-[submodule "vim/dotvim/bundle/vim-css-color"]
-	path = vim/dotvim/bundle/vim-css-color
-	url = git://github.com/ap/vim-css-color.git
-[submodule "vim/dotvim/bundle/gist-vim"]
-	path = vim/dotvim/bundle/gist-vim
-	url = git://github.com/mattn/gist-vim.git
-[submodule "vim/dotvim/bundle/vim-eunuch"]
-	path = vim/dotvim/bundle/vim-eunuch
-	url = git://github.com/tpope/vim-eunuch.git
-[submodule "vim/dotvim/bundle/gundo.vim"]
-	path = vim/dotvim/bundle/gundo.vim
-	url = git://github.com/sjl/gundo.vim.git
-#[submodule "vim/dotvim/bundle/vim-matchit"]
-#	path = vim/dotvim/bundle/vim-matchit
-#	url = git://github.com/edsono/vim-matchit.git
+; [submodule "vim/dotvim/bundle/vim-matchit"]
+; 	path = vim/dotvim/bundle/vim-matchit
+; 	url = git://github.com/edsono/vim-matchit.git
 [submodule "vim/dotvim/bundle/vim-multiple-cursors"]
 	path = vim/dotvim/bundle/vim-multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors.git
@@ -97,3 +79,6 @@
 [submodule "vim/dotvim/bundle/ZoomWin"]
 	path = vim/dotvim/bundle/ZoomWin
 	url = git://github.com/itspriddle/ZoomWin.git
+[submodule "vim/dotvim/bundle/Nvim-R"]
+	path = vim/dotvim/bundle/Nvim-R
+	url = git://github.com/jalvesaq/Nvim-R.git
