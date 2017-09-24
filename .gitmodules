@@ -64,9 +64,9 @@
 [submodule "vim/dotvim/bundle/gundo.vim"]
 	path = vim/dotvim/bundle/gundo.vim
 	url = git://github.com/sjl/gundo.vim.git
-[submodule "vim/dotvim/bundle/vim-matchit"]
-	path = vim/dotvim/bundle/vim-matchit
-	url = git://github.com/edsono/vim-matchit.git
+#[submodule "vim/dotvim/bundle/vim-matchit"]
+#	path = vim/dotvim/bundle/vim-matchit
+#	url = git://github.com/edsono/vim-matchit.git
 [submodule "vim/dotvim/bundle/vim-multiple-cursors"]
 	path = vim/dotvim/bundle/vim-multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors.git
