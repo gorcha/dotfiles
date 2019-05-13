@@ -4,24 +4,24 @@
   # require(dplyr)
   #require(devtools)
   # require(data.table)
-  options(repos = c(CRAN = "http://cran.rstudio.com/"),
-          browserNLdisabled = TRUE,
-          deparse.max.lines = 2)
+  # options(repos = c(CRAN = "http://cran.rstudio.com/"),
+  #         browserNLdisabled = TRUE,
+  #         deparse.max.lines = 2)
   #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
 }
 
 javagc <- function() { .jcall("java/lang/System",,"gc") }
 
-# Lines added by the Vim-R-plugin command :RpluginConfig (2014-Jun-03 23:20):
-if(interactive()){
-  suppressMessages(require(devtools))
-
-  if(nchar(Sys.getenv("DISPLAY")) > 1)
-    options(editor = 'gvim -f -c "set ft=r"')
-  else
-    options(editor = 'vim -c "set ft=r"')
-  # See ?setOutputColors256 to know how to customize R output colors
-  # library(colorout)
-  # library(setwidth)
-  library(vimcom)
+if (interactive()) {
+  suppressMessages(require(usethis))
 }
+
+options(
+  usethis.name = "Danny Smith",
+  usethis.full_name = "Danny Smith",
+  usethis.description = list(
+    `Authors@R` = 'person("Danny", "Smith", email="danny@gorcha.org", role=c("aut", "cre"))',
+    License = "MIT + file LICENSE",
+    Version = "0.0.0.9000"
+  )
+)
