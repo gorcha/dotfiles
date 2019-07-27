@@ -97,3 +97,6 @@
 [submodule "vim/dotvim/bundle/Nvim-R"]
 	path = vim/dotvim/bundle/Nvim-R
 	url = git://github.com/jalvesaq/Nvim-R.git
+[submodule "src/zuki-themes"]
+	path = src/zuki-themes
+	url = git@github.com:lassekongo83/zuki-themes.git
