@@ -23,6 +23,8 @@ alias x='exit'
 
 alias aptitude='sudo aptitude'
 
+alias apt-update='sudo apt-get update && sudo apt-get upgrade'
+
 #vim
 alias vs='sudo vim'
 alias vo='vim -O'
