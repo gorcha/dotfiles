@@ -24,6 +24,7 @@ alias x='exit'
 alias aptitude='sudo aptitude'
 
 alias apt-update='sudo apt-get update && sudo apt-get upgrade'
+alias apt-dist='sudo apt-get dist-upgrade && sudo apt-get autoremove'
 
 #vim
 alias vs='sudo vim'
