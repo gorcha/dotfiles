@@ -115,7 +115,9 @@ colorscheme solarized
 
 let g:vimwiki_folding=1
 
-let g:vimwiki_list = [{'path': '~/vimwiki/',
+let g:vimwiki_list = [{'path': '~/vimwiki/home/',
+                       \ 'syntax': 'markdown', 'ext': '.md'},
+                       \ {'path': '~/vimwiki/work/',
                        \ 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_use_mouse=1
 

@@ -7,8 +7,13 @@ alias mv='mv -i'
 
 alias aptitude='sudo aptitude'
 
-alias apt-update='sudo apt-get update && sudo apt-get upgrade'
-alias apt-dist='sudo apt-get dist-upgrade && sudo apt-get autoremove'
+alias apt-update='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
+#alias apt-dist='sudo apt-get dist-upgrade && sudo apt-get autoremove'
+
+alias bw-export='export BW_SESSION=`bw unlock --raw`'
+ssh-bw() {
+    sshpass -p `bw get password $1` ssh $1
+}
 
 #vim
 alias vs='sudo vim'
