@@ -16,9 +16,6 @@
 [submodule "vim/dotvim/bundle/vim-colors-solarized"]
 	path = vim/dotvim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/dotvim/bundle/nerdtree"]
-	path = vim/dotvim/bundle/nerdtree
-	url = https://github.com/gorcha/nerdtree.git
 [submodule "bin/gibo"]
 	path = bin/gibo
 	url = https://github.com/simonwhitaker/gibo.git
@@ -100,3 +97,12 @@
 [submodule "src/zuki-themes"]
 	path = src/zuki-themes
 	url = git@github.com:lassekongo83/zuki-themes.git
+[submodule "vim/dotvim/bundle/vim-polyglot"]
+	path = vim/dotvim/bundle/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "vim/dotvim/bundle/nerdtree-git-plugin"]
+	path = vim/dotvim/bundle/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "vim/dotvim/bundle/nerdtree"]
+	path = vim/dotvim/bundle/nerdtree
+	url = git@github.com:preservim/nerdtree.git

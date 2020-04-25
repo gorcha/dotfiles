@@ -6,6 +6,7 @@ call add(g:pathogen_disabled, 'python-mode')
 call add(g:pathogen_disabled, 'tagbar')
 let s:tags='taglist'
 call add(g:pathogen_disabled, 'ShowMarks')
+" call add(g:pathogen_disabled, 'nerdtree-git-plugin')
 
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -75,9 +76,9 @@ if &listchars ==# 'eol:$'
   endif
 endif
 
-"if &shell =~# 'fish$'
-"  set shell=/bin/bash
-"endif
+" if &shell =~# 'fish$'
+"   set shell=/bin/bash
+" endif
 
 "set autoread
 set fileformats+=mac
