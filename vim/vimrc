@@ -1,12 +1,13 @@
 let g:pathogen_disabled = []
 
 call add(g:pathogen_disabled, 'python-mode')
-"call add(g:pathogen_disabled, 'taglist')
-"let s:tags='tagbar'
-call add(g:pathogen_disabled, 'tagbar')
-let s:tags='taglist'
+call add(g:pathogen_disabled, 'taglist')
+let s:tags='tagbar'
+" call add(g:pathogen_disabled, 'tagbar')
+" let s:tags='taglist'
 call add(g:pathogen_disabled, 'ShowMarks')
 " call add(g:pathogen_disabled, 'nerdtree-git-plugin')
+call add(g:pathogen_disabled, 'vim-easymotion')
 
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -225,7 +226,12 @@ map <F5> :diffget<CR>
 map <F6> :diffput<CR>
 
 " GUndo
-map <F7> :GundoToggle<CR>
+" map <F7> :GundoToggle<CR>
+
+" Terminal
+set termwinsize=10x0
+map <F7> :below terminal<CR>
+map <F8> :.w !bash<CR>
 
 "CtrlP
 map <C-P> :CtrlP<CR>
