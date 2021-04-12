@@ -1,5 +1,5 @@
 [user]
-	name = Gorcha (Danny Smith)
+	name = Danny Smith
 	email = danny@gorcha.org
 [merge]
 	tool = vimdiff

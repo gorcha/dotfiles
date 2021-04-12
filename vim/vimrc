@@ -9,6 +9,9 @@ call add(g:pathogen_disabled, 'ShowMarks')
 " call add(g:pathogen_disabled, 'nerdtree-git-plugin')
 call add(g:pathogen_disabled, 'vim-easymotion')
 
+call add(g:pathogen_disabled, 'Nvim-R')
+call add(g:pathogen_disabled, 'R-Vim-runtime')
+
 execute pathogen#infect()
 execute pathogen#helptags()
 
