@@ -22,6 +22,9 @@ if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
 
+nnoremap <space> <nop>
+let mapleader = " "
+
 set number
 set hlsearch
 set showmatch
@@ -277,18 +280,3 @@ imap <F10> <ESC>:ToggleErrors<CR>
 nnoremap <C-F12> :bprev<CR>
 nnoremap <M-F12> :bnext<CR>
 
-
-" Lines added by the Vim-R-plugin command :RpluginConfig (2014-Jun-03 23:21):
-" Change the <LocalLeader> key:
-let maplocalleader = ","
-" Use Ctrl+Space to do omnicompletion:
-if has("gui_running")
-    inoremap <C-Space> <C-x><C-o>
-else
-    inoremap <Nul> <C-x><C-o>
-endif
-" Press the space bar to send lines (in Normal mode) and selections to R:
-vmap <Space> <Plug>RDSendSelection
-nmap <Space> <Plug>RDSendLine
-" Disable replaceing _ with <-
-let vimrplugin_assign = 0
