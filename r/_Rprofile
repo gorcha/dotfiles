@@ -10,7 +10,7 @@
   #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
 }
 
-javagc <- function() { .jcall("java/lang/System",,"gc") }
+#javagc <- function() { .jcall("java/lang/System",,"gc") }
 
 if (interactive()) {
   suppressMessages(require(usethis))
