@@ -30,3 +30,13 @@ alias gsubp='git submodule foreach git pull origin master'
 alias psm='ps aux | awk '"'"'{print $6, "\t", $11}'"'"' | sort -n'
 alias psm-watch="watch 'ps aux | awk '"'"'"'"'"'"'{print "'$6'", "'"'""'\t'""'"'", "'$11'"}'"'"'"'"'"'"' | sort -rn'"
 
+# docker
+docker-bash() {
+    docker exec -it $1 /bin/bash
+}
+docker-destroy() {
+    docker stop $1
+    docker rm $1
+}
+alias docker-ls='docker container ls'
+
