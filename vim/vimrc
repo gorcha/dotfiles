@@ -237,7 +237,9 @@ map <F6> :diffput<CR>
 " map <F7> :GundoToggle<CR>
 
 " Terminal
-set termwinsize=10x0
+if v:version >= 801
+  set termwinsize=10x0
+endif
 map <F7> :below terminal<CR>
 map <F8> :.w !bash<CR>
 
