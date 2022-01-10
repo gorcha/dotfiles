@@ -23,4 +23,8 @@ del "%homepath%\_vimrc"
 mklink /H "%homepath%\_vimrc" "%repohome%vim\vimrc"
 mklink /J "%homepath%\vimfiles" "%repohome%vim\dotvim"
 
+REM [r]
+del "%homepath%\Documents\.Rprofile"
+mklink /H "%homepath%\Documents\.Rprofile" "%repohome%r\_Rprofile"
+
 set /p=Hit ENTER to continue...
