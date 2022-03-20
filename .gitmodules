@@ -1,27 +1,27 @@
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "vim/dotvim/bundle/vim-commentary"]
 	path = vim/dotvim/bundle/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/dotvim/bundle/vim-fugitive"]
 	path = vim/dotvim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/dotvim/bundle/vim-surround"]
 	path = vim/dotvim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/dotvim/bundle/vim-characterize"]
 	path = vim/dotvim/bundle/vim-characterize
-	url = git://github.com/tpope/vim-characterize.git
+	url = https://github.com/tpope/vim-characterize.git
 [submodule "vim/dotvim/bundle/vim-colors-solarized"]
 	path = vim/dotvim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bin/gibo"]
 	path = bin/gibo
 	url = https://github.com/simonwhitaker/gibo.git
 [submodule "bin/hub"]
 	path = bin/hub
-	url = git://github.com/github/hub.git
+	url = https://github.com/github/hub.git
 [submodule "bin/rupa_v"]
 	path = bin/rupa_v
 	url = https://github.com/rupa/v.git
@@ -30,70 +30,70 @@
 	url = https://github.com/Lokaltog/powerline-fonts.git
 [submodule "vim/dotvim/bundle/supertab"]
 	path = vim/dotvim/bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "vim/dotvim/bundle/syntastic"]
 	path = vim/dotvim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/dotvim/bundle/python-mode"]
 	path = vim/dotvim/bundle/python-mode
-	url = git://github.com/klen/python-mode.git
+	url = https://github.com/klen/python-mode.git
 [submodule "vim/dotvim/bundle/tagbar"]
 	path = vim/dotvim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/dotvim/bundle/ShowMarks"]
 	path = vim/dotvim/bundle/ShowMarks
-	url = git://github.com/vim-scripts/ShowMarks.git
+	url = https://github.com/vim-scripts/ShowMarks.git
 [submodule "vim/dotvim/bundle/vim-css-color"]
 	path = vim/dotvim/bundle/vim-css-color
-	url = git://github.com/ap/vim-css-color.git
+	url = https://github.com/ap/vim-css-color.git
 [submodule "vim/dotvim/bundle/gist-vim"]
 	path = vim/dotvim/bundle/gist-vim
-	url = git://github.com/mattn/gist-vim.git
+	url = https://github.com/mattn/gist-vim.git
 [submodule "vim/dotvim/bundle/vim-eunuch"]
 	path = vim/dotvim/bundle/vim-eunuch
-	url = git://github.com/tpope/vim-eunuch.git
+	url = https://github.com/tpope/vim-eunuch.git
 [submodule "vim/dotvim/bundle/gundo.vim"]
 	path = vim/dotvim/bundle/gundo.vim
-	url = git://github.com/sjl/gundo.vim.git
+	url = https://github.com/sjl/gundo.vim.git
 ; [submodule "vim/dotvim/bundle/vim-matchit"]
 ; 	path = vim/dotvim/bundle/vim-matchit
-; 	url = git://github.com/edsono/vim-matchit.git
+; 	url = https://github.com/edsono/vim-matchit.git
 [submodule "vim/dotvim/bundle/vim-multiple-cursors"]
 	path = vim/dotvim/bundle/vim-multiple-cursors
-	url = git://github.com/terryma/vim-multiple-cursors.git
+	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "vim/dotvim/bundle/NrrwRgn"]
 	path = vim/dotvim/bundle/NrrwRgn
-	url = git://github.com/chrisbra/NrrwRgn.git
+	url = https://github.com/chrisbra/NrrwRgn.git
 [submodule "vim/dotvim/bundle/tabular"]
 	path = vim/dotvim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "vim/dotvim/bundle/vim-easymotion"]
 	path = vim/dotvim/bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
+	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "vim/dotvim/bundle/ctrlp.vim"]
 	path = vim/dotvim/bundle/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/dotvim/bundle/webapi-vim"]
 	path = vim/dotvim/bundle/webapi-vim
-	url = git://github.com/mattn/webapi-vim
+	url = https://github.com/mattn/webapi-vim
 [submodule "vim/dotvim/bundle/vim-markdown"]
 	path = vim/dotvim/bundle/vim-markdown
-	url = git://github.com/plasticboy/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "vim/dotvim/bundle/vim-mdx"]
 	path = vim/dotvim/bundle/vim-mdx
-	url = git://github.com/findango/vim-mdx.git
+	url = https://github.com/findango/vim-mdx.git
 [submodule "vim/dotvim/bundle/R-Vim-runtime"]
 	path = vim/dotvim/bundle/R-Vim-runtime
-	url = git://github.com/jalvesaq/R-Vim-runtime.git
+	url = https://github.com/jalvesaq/R-Vim-runtime.git
 [submodule "vim/dotvim/bundle/vimwiki"]
 	path = vim/dotvim/bundle/vimwiki
-	url = git://github.com/vim-scripts/vimwiki.git
+	url = https://github.com/vim-scripts/vimwiki.git
 [submodule "vim/dotvim/bundle/ZoomWin"]
 	path = vim/dotvim/bundle/ZoomWin
-	url = git://github.com/itspriddle/ZoomWin.git
+	url = https://github.com/itspriddle/ZoomWin.git
 [submodule "vim/dotvim/bundle/Nvim-R"]
 	path = vim/dotvim/bundle/Nvim-R
-	url = git://github.com/jalvesaq/Nvim-R.git
+	url = https://github.com/jalvesaq/Nvim-R.git
 [submodule "src/zuki-themes"]
 	path = src/zuki-themes
 	url = git@github.com:lassekongo83/zuki-themes.git
