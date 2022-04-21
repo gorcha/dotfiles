@@ -96,16 +96,16 @@
 	url = https://github.com/jalvesaq/Nvim-R.git
 [submodule "src/zuki-themes"]
 	path = src/zuki-themes
-	url = git@github.com:lassekongo83/zuki-themes.git
+	url = https://github.com/lassekongo83/zuki-themes.git
 [submodule "vim/dotvim/bundle/vim-polyglot"]
 	path = vim/dotvim/bundle/vim-polyglot
-	url = git@github.com:sheerun/vim-polyglot.git
+	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "vim/dotvim/bundle/nerdtree-git-plugin"]
 	path = vim/dotvim/bundle/nerdtree-git-plugin
-	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "vim/dotvim/bundle/nerdtree"]
 	path = vim/dotvim/bundle/nerdtree
-	url = git@github.com:preservim/nerdtree.git
+	url = https://github.com/preservim/nerdtree.git
 [submodule "vim/dotvim/bundle/vim-javascript"]
 	path = vim/dotvim/bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git

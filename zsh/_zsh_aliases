@@ -24,7 +24,8 @@ alias vvi='vim'
 alias vd='vimdiff'
 
 #git
-alias gsubp='git submodule foreach git pull origin master'
+#alias gsubp='git submodule foreach git pull origin master'
+alias gsubp='git submodule foreach git pull'
 
 #memory usage
 alias psm='ps aux | awk '"'"'{print $6, "\t", $11}'"'"' | sort -n'
