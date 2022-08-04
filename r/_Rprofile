@@ -1,19 +1,8 @@
 
-.First <- function() {
-  # require(stringr)
-  # require(dplyr)
-  #require(devtools)
-  # require(data.table)
-  # options(repos = c(CRAN = "http://cran.rstudio.com/"),
-  #         browserNLdisabled = TRUE,
-  #         deparse.max.lines = 2)
-  #cat("\nUser libraries loaded\nWelcome at", date(), "\n") 
-}
-
-#javagc <- function() { .jcall("java/lang/System",,"gc") }
-
 if (interactive()) {
   suppressMessages(require(usethis))
+  suppressMessages(require(devtools))
+  suppressMessages(require(gert))
 }
 
 options(
